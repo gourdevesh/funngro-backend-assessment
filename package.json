@@ -1,0 +1,12 @@
+{
+  "name": "funngro-backend-assessment",
+  "version": "1.0.0",
+  "private": true,
+  "engines": { "node": ">=18" },
+  "scripts": {
+"test": "node --env-file=.env --test part1/test/withdraw.concurrency.test.js"
+ },
+  "dependencies": {
+    "mongodb": "^6.8.0"
+  }
+}
