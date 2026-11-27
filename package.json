@@ -2,11 +2,18 @@
   "name": "funngro-backend-assessment",
   "version": "1.0.0",
   "private": true,
-  "engines": { "node": ">=18" },
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
-"test": "node --env-file=.env --test part1/test/withdraw.concurrency.test.js"
- },
+    "test": "node --env-file=.env --test part1/test/withdraw.concurrency.test.js",
+    "test:part2": "node --env-file=.env check-part2.js",
+    "demo": "node --env-file=.env demo.js",
+    "start": "node --env-file=.env server.js"
+  },
   "dependencies": {
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0",
     "mongodb": "^6.8.0"
   }
 }
